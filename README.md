@@ -1,1 +1,1 @@
-# github actionを使ってgithubのdockerの中でubuntu linuxのqemuをaarch64で動かすサンプルです。
+# github actionを使ってgithubのdockerの中でubuntu linuxのコンテナを使ってqemuをaarch64で動かすサンプルです。
