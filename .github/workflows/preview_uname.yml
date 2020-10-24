@@ -14,5 +14,11 @@ jobs:
 
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
+      - name: show uname
+        run: uname -a
+      - name: update apt
+        run: sudo apt update
       - name: install qemu-system-aarch64
         run: sudo apt install qemu-system-aarch64
+      - name: show qemu-system-aarch64
+        run: qemu-system-aarch64 --version
