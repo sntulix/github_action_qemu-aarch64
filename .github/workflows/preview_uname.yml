@@ -22,9 +22,9 @@ jobs:
         run: sudo apt-get install binfmt-support
       - name: modprobe binfmt
         run: sudo modprobe binfmt_misc
-      - name: install qemu-system-aarch64
-        run: sudo apt install qemu-system-aarch64
-      - name: where qemu-system-aarch64
+      - name: install qemu-user-static
+        run: sudo apt install qemu-user-static
+      - name: where qemu-aarch64-static
         run: which qemu-aarch64-static
-      - name: show qemu-system-aarch64
+      - name: show qemu-aarch64-static
         run: which qemu-aarch64-static --version
