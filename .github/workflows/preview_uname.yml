@@ -2,5 +2,5 @@ name: 'linux action'
 description: 'preview uname'
 runs:
   steps:
-    - run: uname -a
+    - run: echo Hello.
     shell: bash
