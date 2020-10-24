@@ -18,7 +18,13 @@ jobs:
         run: uname -a
       - name: update apt
         run: sudo apt update
+      - name: install binfmt
+        run: sudo apt-get install binfmt-support
+      - name: modprobe binfmt
+        run: sudo modprobe binfmt_misc
       - name: install qemu-system-aarch64
         run: sudo apt install qemu-system-aarch64
+      - name: where qemu-system-aarch64
+        run: which qemu-aarch64-static
       - name: show qemu-system-aarch64
-        run: qemu-system-aarch64 --version
+        run: which qemu-aarch64-static --version
