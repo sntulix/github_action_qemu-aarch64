@@ -1,2 +1,2 @@
 
-# github actionでdockerの中でaarch64なqemuを動かすサンプルです。
+# github actionを使ってdockerの中でaarch64なqemuを動かすサンプルです。
