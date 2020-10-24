@@ -27,4 +27,4 @@ jobs:
       - name: where qemu-aarch64-static
         run: which qemu-aarch64-static
       - name: show qemu-aarch64-static
-        run: which qemu-aarch64-static --version
+        run: qemu-aarch64-static --version
