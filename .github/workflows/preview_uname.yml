@@ -15,4 +15,4 @@ jobs:
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: install qemu-system-aarch64
-        run: apt install qemu-system-aarch64
+        run: sudo apt install qemu-system-aarch64
