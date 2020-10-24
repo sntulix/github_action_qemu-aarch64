@@ -16,12 +16,15 @@ jobs:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: show uname
         run: uname -a
+
       - name: update apt
         run: sudo apt update
+
       - name: install binfmt
         run: sudo apt-get install binfmt-support
       - name: modprobe binfmt
         run: sudo modprobe binfmt_misc
+
       - name: install qemu-user-static
         run: sudo apt install qemu-user-static
       - name: where qemu-aarch64-static
