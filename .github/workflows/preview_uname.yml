@@ -1,6 +1,6 @@
 name: 'linux action'
 description: 'preview uname'
 runs:
-	steps:
-		- run: echo `uname -a`
-		shell: bash
+  steps:
+    - run: echo `uname -a`
+    shell: bash
