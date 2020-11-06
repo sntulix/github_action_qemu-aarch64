@@ -47,11 +47,12 @@ jobs:
       - name: ls ./ubuntu-20.04-arm64
         run: ls 
         working-directory: ./ubuntu-20.04-arm64
-      - name: ls
+      - name: ls ./ubuntu-20.04-arm64/bin
         run: ls bin
         working-directory: ./ubuntu-20.04-arm64
 
       - name: swtich root dir tree
-        run: sudo chroot ./ubuntu-20.04-arm64
+        run: sudo chroot ../ubuntu-20.04-arm64
+        working-directory: ./ubuntu-20.04-arm64
       - name: show architecture
         run: uname -a
