@@ -47,7 +47,7 @@ jobs:
       - name: ls -l ./ubuntu-20.04-arm64
         run: ls -l 
         working-directory: ./ubuntu-20.04-arm64
-      - name: ls ./ubuntu-20.04-arm64/bin
+#      - name: ls ./ubuntu-20.04-arm64/bin
 #        run: ls bin
 #        working-directory: ./ubuntu-20.04-arm64
 
