@@ -1,4 +1,4 @@
-# github actionを使ってgithubのdockerの中でubuntu linuxのコンテナイメージを使ってqemuをaarch64で動かすサンプルです。
+# github actionを使ってgithubのdockerの中でubuntu linuxのコンテナイメージを使ってqemuをarm64(aarch64)で動かすサンプルです。
 
 ```
 Run uname -a
