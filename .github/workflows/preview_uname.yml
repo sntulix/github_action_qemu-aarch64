@@ -45,10 +45,10 @@ jobs:
       - name: ls
         run: ls
       - name: ls ./ubuntu-20.04-arm64
-        run: ls ./ubuntu-20.04-arm64
+        run: ls 
         working-directory: ./ubuntu-20.04-arm64
       - name: ls
-        run: ls ./ubuntu-20.04-arm64/bin
+        run: ls bin
         working-directory: ./ubuntu-20.04-arm64
 
       - name: swtich root dir tree
