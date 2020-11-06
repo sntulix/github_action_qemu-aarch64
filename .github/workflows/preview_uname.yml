@@ -56,21 +56,21 @@ jobs:
         run: rm bin
         working-directory: ./ubuntu-20.04-arm64
       - name: fix /bin
-        run: cp -pr usr/bin bin
+        run: cp -a usr/bin bin
         working-directory: ./ubuntu-20.04-arm64
 
       - name: rm symbolic /sbin
         run: rm sbin
         working-directory: ./ubuntu-20.04-arm64
       - name: fix /sbin
-        run: cp -pr usr/sbin sbin
+        run: cp -a usr/sbin sbin
         working-directory: ./ubuntu-20.04-arm64
 
       - name: rm symbolic /lib
         run: rm lib
         working-directory: ./ubuntu-20.04-arm64
       - name: fix /lib
-        run: cp -pr usr/lib lib
+        run: cp -a usr/lib lib
         working-directory: ./ubuntu-20.04-arm64
 
       - name: ls -l ./ubuntu-20.04-arm64
