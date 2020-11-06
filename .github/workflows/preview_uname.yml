@@ -44,7 +44,7 @@ jobs:
         working-directory: ./ubuntu-20.04-arm64
       - name: ls
         run: ls bin
-        working-directory: ./ubuntu-20.04-arm64/bin
+        working-directory: ./ubuntu-20.04-arm64
 
       - name: swtich root dir tree
         run: sudo chroot ./ubuntu-20.04 
