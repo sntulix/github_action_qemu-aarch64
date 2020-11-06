@@ -54,5 +54,5 @@ jobs:
 #      - name: swtich root dir tree
 #        run: sudo chroot ./ubuntu-20.04-arm64
       - name: show architecture
-        run: qemu-aarch64-static uname -a
-        working-directory: ./ubuntu-20.04-arm64/bin
+        run: qemu-aarch64-static -L ./lib bin/uname -a
+        working-directory: ./ubuntu-20.04-arm64
