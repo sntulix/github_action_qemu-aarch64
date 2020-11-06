@@ -52,6 +52,6 @@ jobs:
         working-directory: ./ubuntu-20.04-arm64
 
       - name: swtich root dir tree
-        run: sudo chroot ./ubuntu-20.04 
+        run: sudo chroot ./ubuntu-20.04-arm64
       - name: show architecture
         run: uname -a
