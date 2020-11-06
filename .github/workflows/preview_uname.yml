@@ -52,30 +52,34 @@ jobs:
         run: qemu-aarch64-static -L ./ bin/uname -a
         working-directory: ./ubuntu-20.04-arm64
 
-      - name: rm symbolic /bin
-        run: rm bin
-        working-directory: ./ubuntu-20.04-arm64
-      - name: fix /bin
-        run: cp -a usr/bin bin
+      - name: cp qemu-aarch64-static
+        run: cp `which qemu-aarch64-static` usr/bin
         working-directory: ./ubuntu-20.04-arm64
 
-      - name: rm symbolic /sbin
-        run: rm sbin
-        working-directory: ./ubuntu-20.04-arm64
-      - name: fix /sbin
-        run: cp -a usr/sbin sbin
-        working-directory: ./ubuntu-20.04-arm64
+#      - name: rm symbolic /bin
+#        run: rm bin
+#        working-directory: ./ubuntu-20.04-arm64
+#      - name: fix /bin
+#        run: cp -a usr/bin bin
+#        working-directory: ./ubuntu-20.04-arm64
 
-      - name: rm symbolic /lib
-        run: rm lib
-        working-directory: ./ubuntu-20.04-arm64
-      - name: fix /lib
-        run: cp -a usr/lib lib
-        working-directory: ./ubuntu-20.04-arm64
+#      - name: rm symbolic /sbin
+#        run: rm sbin
+#        working-directory: ./ubuntu-20.04-arm64
+#      - name: fix /sbin
+#        run: cp -a usr/sbin sbin
+#        working-directory: ./ubuntu-20.04-arm64
 
-      - name: ls -l ./ubuntu-20.04-arm64
-        run: ls -l 
-        working-directory: ./ubuntu-20.04-arm64
+#      - name: rm symbolic /lib
+#        run: rm lib
+#        working-directory: ./ubuntu-20.04-arm64
+#      - name: fix /lib
+#        run: cp -a usr/lib lib
+#        working-directory: ./ubuntu-20.04-arm64
+
+#      - name: ls -l ./ubuntu-20.04-arm64
+#        run: ls -l 
+#        working-directory: ./ubuntu-20.04-arm64
 
 #      - name: ls ./ubuntu-20.04-arm64/bin
 #        run: ls bin
