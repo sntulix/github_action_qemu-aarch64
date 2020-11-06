@@ -43,7 +43,12 @@ jobs:
         run: tar xvzf ../ubuntu-base-20.04.1-base-arm64.tar.gz
         working-directory: ./ubuntu-20.04-arm64
       - name: ls
-        run: ls bin
+        run: ls
+      - name: ls ./ubuntu-20.04-arm64
+        run: ls ./ubuntu-20.04-arm64
+        working-directory: ./ubuntu-20.04-arm64
+      - name: ls
+        run: ls ./ubuntu-20.04-arm64/bin
         working-directory: ./ubuntu-20.04-arm64
 
       - name: swtich root dir tree
