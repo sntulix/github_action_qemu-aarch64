@@ -1,4 +1,4 @@
-# github actionを使ってgithubのdockerの中でubuntu linuxのコンテナを使ってqemuをaarch64で動かすサンプルです。
+# github actionを使ってgithubのdockerの中でubuntu linuxのコンテナイメージを使ってqemuをaarch64で動かすサンプルです。
 
 ```
 qemu-aarch64-static -L ./ bin/uname -a
