@@ -40,7 +40,7 @@ jobs:
       - name: mkdir ubuntu base
         run: mkdir ubuntu-20.04
       - name: uncompress
-        run: tar xvzf ubuntu-base-20.04.1-base-arm64.tar.gz
+        run: tar xvzf ../ubuntu-base-20.04.1-base-arm64.tar.gz
         working-directory: ubuntu-20.04
 
       - name: swtich root dir tree
